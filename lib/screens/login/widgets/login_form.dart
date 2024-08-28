@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get_core/get_core.dart';
 import 'package:get/get_navigation/get_navigation.dart';
 import 'package:iconsax/iconsax.dart';
+import 'package:summer_project/main_page.dart';
 import 'package:summer_project/screens/password_configuration/forget_password.dart';
 import 'package:summer_project/screens/signup/signup.dart';
 import 'package:summer_project/utils/constants/sizes.dart';
@@ -55,7 +56,7 @@ class TLoginForm extends StatelessWidget {
               width: double.infinity,
               child: ElevatedButton(
                   onPressed: () {
-                    // Get.to(() => const NavigationMenu());
+                    Get.to(() =>  MainPage());
                   },
                   child: const Text(TTexts.signIn)),
             ),

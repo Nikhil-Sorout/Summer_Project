@@ -15,3 +15,20 @@ class App extends StatelessWidget {
     );
   }
 }
+
+// class MyApp extends StatelessWidget {
+//   @override
+//   Widget build(BuildContext context) {
+//     return MaterialApp(
+//       title: 'Freelancing App',
+//       theme: ThemeData(
+//         primarySwatch: Colors.blue,
+//         brightness: Brightness.light,
+//       ),
+//       darkTheme: ThemeData(
+//         brightness: Brightness.dark,
+//       ),
+//       home: OnBoardingScreen(),
+//     );
+//   }
+// }
