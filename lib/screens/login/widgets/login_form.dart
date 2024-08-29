@@ -8,7 +8,6 @@ import 'package:summer_project/screens/signup/signup.dart';
 import 'package:summer_project/utils/constants/sizes.dart';
 import 'package:summer_project/utils/constants/text_strings.dart';
 
-
 class TLoginForm extends StatelessWidget {
   const TLoginForm({
     super.key,
@@ -56,7 +55,7 @@ class TLoginForm extends StatelessWidget {
               width: double.infinity,
               child: ElevatedButton(
                   onPressed: () {
-                    Get.to(() =>  MainPage());
+                    Get.offAll(() => MainPage());
                   },
                   child: const Text(TTexts.signIn)),
             ),

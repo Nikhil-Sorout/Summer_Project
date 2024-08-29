@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:get/get_navigation/get_navigation.dart';
 import 'package:iconsax/iconsax.dart';
+import 'package:summer_project/screens/signup/input.dart';
 import 'package:summer_project/screens/signup/verify_email.dart';
 import 'package:summer_project/screens/signup/widgets/terms_and_conditions_checkbox.dart';
 import 'package:summer_project/utils/constants/sizes.dart';
 import 'package:summer_project/utils/constants/text_strings.dart';
-
 
 class TSignUpForm extends StatelessWidget {
   const TSignUpForm({
@@ -86,7 +86,7 @@ class TSignUpForm extends StatelessWidget {
           width: double.infinity,
           child: ElevatedButton(
             onPressed: () {
-              Get.to(() => const VerifyEmailScreen());
+              Get.to(() => VerifyEmailScreen());
             },
             child: const Text(TTexts.createAccount),
           ),

@@ -4,11 +4,11 @@ import 'package:get/get_core/src/get_main.dart';
 import 'package:get/get_navigation/get_navigation.dart';
 import 'package:summer_project/common/widgets/success_screen/success_screen.dart';
 import 'package:summer_project/screens/login/login.dart';
+import 'package:summer_project/screens/signup/input.dart';
 import 'package:summer_project/utils/constants/image_strings.dart';
 import 'package:summer_project/utils/constants/sizes.dart';
 import 'package:summer_project/utils/constants/text_strings.dart';
 import 'package:summer_project/utils/helpers/helper_functions.dart';
-
 
 class VerifyEmailScreen extends StatelessWidget {
   const VerifyEmailScreen({super.key});
@@ -62,7 +62,7 @@ class VerifyEmailScreen extends StatelessWidget {
                             title: TTexts.yourAccountCreatedTitle,
                             subtitle: TTexts.yourAccountCreatedSubTitle,
                             onPressed: () {
-                              Get.to(() => const LoginScreeen());
+                              Get.to(() => ProfileInputPage());
                             },
                           ));
                     },

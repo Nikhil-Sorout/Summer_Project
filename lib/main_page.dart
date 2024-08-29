@@ -14,7 +14,10 @@ class _MainPageState extends State<MainPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Freelancing App"),
+        title: Text(
+          "JobVerse",
+          style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+        ),
         actions: [
           IconButton(
             icon: Icon(Icons.search),
@@ -62,11 +65,26 @@ class _MainPageState extends State<MainPage> {
       ),
       bottomNavigationBar: BottomNavigationBar(
         items: [
-          BottomNavigationBarItem(icon: Icon(Icons.work), label: "Jobs"),
           BottomNavigationBarItem(
-              icon: Icon(Icons.person_search), label: "Freelancers"),
-          BottomNavigationBarItem(icon: Icon(Icons.message), label: "Messages"),
-          BottomNavigationBarItem(icon: Icon(Icons.person), label: "Profile"),
+            icon: Icon(Icons.work),
+            label: "Jobs",
+            backgroundColor: Colors.black,
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.person_search),
+            label: "Freelancers",
+            backgroundColor: Colors.black,
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.message),
+            label: "Messages",
+            backgroundColor: Colors.black,
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.person),
+            label: "Profile",
+            backgroundColor: Colors.black,
+          ),
         ],
       ),
     );
