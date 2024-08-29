@@ -8,8 +8,6 @@ class MainPage extends StatefulWidget {
 }
 
 class _MainPageState extends State<MainPage> {
-  bool isGridView = false;
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -37,14 +35,6 @@ class _MainPageState extends State<MainPage> {
               );
             },
           ),
-          IconButton(
-            icon: Icon(isGridView ? Icons.list : Icons.grid_view),
-            onPressed: () {
-              setState(() {
-                isGridView = !isGridView;
-              });
-            },
-          ),
         ],
       ),
       body: Padding(
@@ -58,7 +48,7 @@ class _MainPageState extends State<MainPage> {
             ),
             SizedBox(height: 10),
             Expanded(
-              child: isGridView ? _buildGridView() : _buildListView(),
+              child: _buildListView(),
             ),
           ],
         ),
@@ -110,51 +100,6 @@ class _MainPageState extends State<MainPage> {
                   borderRadius: BorderRadius.circular(10),
                 ),
               ),
-            ),
-          ),
-        );
-      },
-    );
-  }
-
-  Widget _buildGridView() {
-    return GridView.builder(
-      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-        crossAxisCount: 2,
-        childAspectRatio: 3 / 2,
-        crossAxisSpacing: 10,
-        mainAxisSpacing: 10,
-      ),
-      itemCount: 6,
-      itemBuilder: (context, index) {
-        return Card(
-          elevation: 4,
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(15),
-          ),
-          child: Padding(
-            padding: const EdgeInsets.all(16.0),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text("Job Title $index",
-                    style:
-                        TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
-                Spacer(),
-                Text("Brief description of the job."),
-                Spacer(),
-                Center(
-                  child: ElevatedButton(
-                    onPressed: () {},
-                    child: Text("Apply"),
-                    style: ElevatedButton.styleFrom(
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(10),
-                      ),
-                    ),
-                  ),
-                ),
-              ],
             ),
           ),
         );
