@@ -15,12 +15,12 @@ class ProfilePage extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            CircleAvatar(
-              radius: 50,
-              backgroundImage: NetworkImage(
-                  'https://via.placeholder.com/150'), // Placeholder image
-            ),
-            SizedBox(height: 20),
+            // CircleAvatar(
+            //   radius: 50,
+            //   backgroundImage: NetworkImage(
+            //       'https://via.placeholder.com/150'), // Placeholder image
+            // ),
+            // SizedBox(height: 20),
             Text(
               "John Doe",
               style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),

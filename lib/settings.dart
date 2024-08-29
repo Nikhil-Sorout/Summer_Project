@@ -37,16 +37,16 @@ class _SettingsPageState extends State<SettingsPage> {
             Center(
               child: Column(
                 children: [
-                  GestureDetector(
-                    onTap: () {
-                      _editProfileImage();
-                    },
-                    child: CircleAvatar(
-                      radius: 50,
-                      backgroundImage: AssetImage(_profileImagePath),
-                    ),
-                  ),
-                  SizedBox(height: 10),
+                  // GestureDetector(
+                  //   onTap: () {
+                  //     _editProfileImage();
+                  //   },
+                  //   child: CircleAvatar(
+                  //     radius: 50,
+                  //     backgroundImage: AssetImage(_profileImagePath),
+                  //   ),
+                  // ),
+                  // SizedBox(height: 10),
                   Text(
                     _userName,
                     style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),

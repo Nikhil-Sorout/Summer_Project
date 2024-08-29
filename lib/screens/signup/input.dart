@@ -47,38 +47,38 @@ class _ProfileInputPageState extends State<ProfileInputPage> {
         padding: const EdgeInsets.all(16.0),
         child: ListView(
           children: [
-            Center(
-              child: GestureDetector(
-                onTap: _pickImage,
-                child: Stack(
-                  children: [
-                    CircleAvatar(
-                      radius: 60,
-                      backgroundImage: _profileImage != null
-                          ? FileImage(_profileImage!)
-                          : AssetImage('assets/5856.jpg') as ImageProvider,
-                      backgroundColor: Colors.grey[200],
-                    ),
-                    Positioned(
-                      bottom: 0,
-                      right: 0,
-                      child: Container(
-                        padding: EdgeInsets.all(8),
-                        decoration: BoxDecoration(
-                          shape: BoxShape.circle,
-                          color: Colors.teal,
-                        ),
-                        child: Icon(
-                          Icons.camera_alt,
-                          color: Colors.white,
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ),
-            SizedBox(height: 30),
+            // Center(
+            //   child: GestureDetector(
+            //     onTap: _pickImage,
+            //     child: Stack(
+            //       children: [
+            //         CircleAvatar(
+            //           radius: 60,
+            //           backgroundImage: _profileImage != null
+            //               ? FileImage(_profileImage!)
+            //               : AssetImage('assets/5856.jpg') as ImageProvider,
+            //           backgroundColor: Colors.grey[200],
+            //         ),
+            //         Positioned(
+            //           bottom: 0,
+            //           right: 0,
+            //           child: Container(
+            //             padding: EdgeInsets.all(8),
+            //             decoration: BoxDecoration(
+            //               shape: BoxShape.circle,
+            //               color: Colors.teal,
+            //             ),
+            //             child: Icon(
+            //               Icons.camera_alt,
+            //               color: Colors.white,
+            //             ),
+            //           ),
+            //         ),
+            //       ],
+            //     ),
+            //   ),
+            // ),
+            // SizedBox(height: 30),
             _buildInputCard(
               title: 'Skills',
               hintText: 'Enter your skills separated by commas',
